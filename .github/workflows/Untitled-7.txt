@@ -1,0 +1,5 @@
+- name: Set Caddy secret
+  copy:
+    dest: /home/pi/pi-hole/.caddy.env
+    # I'm using 1Password here, but you could use any secret store you wanted
+    content: "CLOUDFLARE_API_TOKEN={{ lookup('community.general.onepassword', 'Raspberry pi', field='Cloudflare Token') }}"

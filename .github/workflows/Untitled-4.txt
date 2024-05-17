@@ -1,0 +1,34 @@
+services:
+  caddy:
+    build:
+      context: .
+      dockerfile: caddy.Dockerfile
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80" # For HTTP -> HTTPS redirects
+      - "443:443"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    env_file:
+      - .caddy.env
+    dns:
+      - 1.0.0.3
+    healthcheck:
+        test: ["CMD", "caddy", "version"]
+    depends_on:
+      - adguardhome
+      # Replace with the following for pi-hole:
+      # - pihole
+      # - cloudflared
+    networks:
+      net: {}
+
+volumes:
+  caddy_data:
+    external: true
+  caddy_config:
+
+  

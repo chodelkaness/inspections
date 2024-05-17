@@ -1,0 +1,63 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: Update and upgrade apt packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Install pip
+      apt:
+        name: python3-pip
+        state: present
+
+    - name: Install required Python packages
+      pip:
+        name:
+          - pymilvus
+          - sentence-transformers
+          - fpdf
+          - flask
+          - joblib
+          - scikit-learn
+          - shap
+          - pandas
+          - numpy
+
+    - name: Start Milvus container
+      shell: |
+        docker run -d --name milvus -p 19530:19530 -p 19121:19121 milvusdb/milvus:latest
+
+    - name: Pull the latest code from GitHub
+      git:
+        repo: 'https://github.com/your-repo/your-project.git'
+        dest: /home/ec2-user/your-project
+
+    - name: Set up the application service
+      copy:
+        dest: /etc/systemd/system/ml_service.service
+        content: |
+          [Unit]
+          Description=ML Service
+          After=network.target
+
+          [Service]
+          User=ec2-user
+          WorkingDirectory=/home/ec2-user/your-project
+          ExecStart=/usr/bin/python3 /home/ec2-user/your-project/app.py
+
+          [Install]
+          WantedBy=multi-user.target
+
+    - name: Start and enable the ML service
+      systemd:
+        name: ml_service
+        enabled: yes
+        state: started

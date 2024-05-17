@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Property Inspections</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Rental Property Inspections</h2>
+
+<table>
+    <tr>
+        <th>Inspection Time</th>
+        <th>Departure Time</th>
+        <th>Travel Time</th>
+        <th>Arrival Time</th>
+        <th>Time at Property</th>
+        <th>Address</th>
+        <th>Property Type</th>
+        <th>Bedrooms</th>
+        <th>Bathrooms</th>
+        <th>Weekly Rent</th>
+        <th>Potential Profit</th>
+        <th>Overall Rating</th>
+        <th>Company</th>
+        <th>Agent Name</th>
+        <th>Contact Number</th>
+        <th>Application System</th>
+    </tr>
+    <tr>
+        <td>10:15 AM - 10:30 AM</td>
+        <td>10:05 AM</td>
+        <td>10 mins</td>
+        <td>10:15 AM</td>
+        <td>15 mins</td>
+        <td><a href="https://www.realestate.com.au/property-apartment-vic-hughesdale-137473234">1/102 Poath Road, Hughesdale</a></td>
+        <td>Apartment</td>
+        <td>3</td>
+        <td>2</td>
+        <td>$650</td>
+        <td>$180</td>
+        <td>8/10</td>
+        <td>Buxton Stonnington</td>
+        <td>Melissa Austin</td>
+        <td>(03) 9531 1245</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>10:45 AM - 11:00 AM</td>
+        <td>10:35 AM</td>
+        <td>5 mins</td>
+        <td>10:40 AM</td>
+        <td>20 mins</td>
+        <td><a href="https://www.realestate.com.au/property-house-vic-clayton-137482446">12 Bevan Avenue, Clayton</a></td>
+        <td>House</td>
+        <td>4</td>
+        <td>1</td>
+        <td>$700</td>
+        <td>$320</td>
+        <td>7.5/10</td>
+        <td>BigginScott Richmond</td>
+        <td>Christian Galanakis</td>
+        <td>(03) 9426 4003</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>11:15 AM - 11:30 AM</td>
+        <td>11:05 AM</td>
+        <td>9 mins</td>
+        <td>11:14 AM</td>
+        <td>16 mins</td>
+        <td><a href="https://www.realestate.com.au/property-townhouse-vic-clayton-137473587">3/56 Wright Street, Clayton</a></td>
+        <td>Townhouse</td>
+        <td>3</td>
+        <td>2</td>
+        <td>$680</td>
+        <td>$305</td>
+        <td>7.5/10</td>
+        <td>Marshall White Stonnington</td>
+        <td>Danielle Crumblehulme</td>
+        <td>(03) 9822 9999</td>
+        <td><a href="https://www.tenantapp.com.au/Rentals/Agency/marshallwhite">2Apply</a></td>
+    </tr>
+    <tr>
+        <td>11:45 AM - 12:00 PM</td>
+        <td>11:35 AM</td>
+        <td>4 mins</td>
+        <td>11:39 AM</td>
+        <td>21 mins</td>
+        <td><a href="https://www.realestate.com.au/property-apartment-vic-oakleigh+east-137485893">1/1409 North Road, Oakleigh East</a></td>
+        <td>Apartment</td>
+        <td>3</td>
+        <td>2</td>
+        <td>$625</td>
+        <td>$180</td>
+        <td>8/10</td>
+        <td>Dingle Partners</td>
+        <td>Shane Dangen</td>
+        <td>(03) 9614 6688</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>12:00 PM - 12:15 PM</td>
+        <td>11:55 AM</td>
+        <td>4 mins</td>
+        <td>11:59 AM</td>
+        <td>16 mins</td>
+        <td><a href="https://www.realestate.com.au/property-house-vic-oakleigh+east-137485784">16 Gamble Street, Oakleigh East</a></td>
+        <td>House</td>
+        <td>4</td>
+        <td>1</td>
+        <td>$700</td>
+        <td>$320</td>
+        <td>8/10</td>
+        <td>RT Edgar Toorak</td>
+        <td>Bailey Topfer</td>
+        <td>(03) 9826 1000</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>1:00 PM - 1:15 PM</td>
+        <td>12:50 PM</td>
+        <td>5 mins</td>
+        <td>12:55 PM</td>
+        <td>20 mins</td>
+        <td><a href="https://www.realestate.com.au/property-townhouse-vic-oakleigh+east-137485983">1/20 Keith Street, Oakleigh East</a></td>
+        <td>Townhouse</td>
+        <td>3</td>
+        <td>2</td>
+        <td>$650</td>
+        <td>$280</td>
+        <td>8.5/10</td>
+        <td>Woodards South Yarra</td>
+        <td>Joshua Ling</td>
+        <td>(03) 9826 1000</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>1:30 PM - 1:45 PM</td>
+        <td>1:20 PM</td>
+        <td>6 mins</td>
+        <td>1:26 PM</td>
+        <td>19 mins</td>
+        <td><a href="https://www.realestate.com.au/property-townhouse-vic-oakleigh-137485842">2/1 Lincoln Avenue, Oakleigh</a></td>
+        <td>Townhouse</td>
+        <td>3</td>
+        <td>2</td>
+        <td>$799</td>
+        <td>$200</td>
+        <td>8.5/10</td>
+        <td>Buxton Stonnington</td>
+        <td>Courtney Dix</td>
+        <td>(03) 9531 1245</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>2:00 PM - 2:15 PM</td>
+        <td>1:50 PM</td>
+        <td>8 mins</td>
+        <td>1:58 PM</td>
+        <td>17 mins</td>
+        <td><a href="https://www.realestate.com.au/property-unit-vic-oakleigh+east-137485742">2/18 Alexander Avenue, Oakleigh East</a></td>
+        <td>Unit</td>
+        <td>2</td>
+        <td>1</td>
+        <td>$670</td>
+        <td>$140</td>
+        <td>8/10</td>
+        <td>Bekdon Richards</td>
+        <td>Tess Macdonald</td>
+        <td>(03) 9854 8844</td>
+        <td><a href="https://1form.com">1Form</a></td>
+```html
+    </tr>
+    <tr>
+        <td>2:20 PM - 2:30 PM</td>
+        <td>2:10 PM</td>
+        <td>7 mins</td>
+        <td>2:17 PM</td>
+        <td>18 mins</td>
+        <td><a href="https://www.realestate.com.au/property-house-vic-huntingdale-137485902">23 Washington Drive, Huntingdale</a></td>
+        <td>House</td>
+        <td>4</td>
+        <td>1</td>
+        <td>$675</td>
+        <td>$300</td>
+        <td>7/10</td>
+        <td>Woodards South Yarra</td>
+        <td>Joshua Ling</td>
+        <td>(03) 9826 1000</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>2:35 PM - 2:45 PM</td>
+        <td>2:25 PM</td>
+        <td>10 mins</td>
+        <td>2:35 PM</td>
+        <td>10 mins</td>
+        <td><a href="https://www.realestate.com.au/property-house-vic-oakleigh+south-137485862">2/8 Mimosa Avenue, Oakleigh South</a></td>
+        <td>House</td>
+        <td>4</td>
+        <td>3</td>
+        <td>$820</td>
+        <td>$180</td>
+        <td>8/10</td>
+        <td>RT Edgar Toorak</td>
+        <td>Bailey Topfer</td>
+        <td>(03) 9826 1000</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+    <tr>
+        <td>2:50 PM - 3:05 PM</td>
+        <td>2:45 PM</td>
+        <td>5 mins</td>
+        <td>2:50 PM</td>
+        <td>15 mins</td>
+        <td><a href="https://www.realestate.com.au/property-house-vic-mount+waverley-137485922">27 Palm Beach Crescent, Mount Waverley</a></td>
+        <td>House</td>
+        <td>4</td>
+        <td>1</td>
+        <td>$700</td>
+        <td>$320</td>
+        <td>7.5/10</td>
+        <td>Dingle Partners</td>
+        <td>Shane Dangen</td>
+        <td>(03) 9614 6688</td>
+        <td><a href="https://1form.com">1Form</a></td>
+    </tr>
+</table>
+
+<h2>Cover Letter for Rental Application</h2>
+
+<p><strong>[Your Name]</strong><br>
+<strong>[Your Current Address]</strong><br>
+<strong>[City, State, Zip Code]</strong><br>
+<strong>[Email Address]</strong><br>
+<strong>[Phone Number]</strong><br>
+<strong>[Date]</strong></p>
+
+<p><strong>William Zhao</strong><br>
+<strong>Harcourts Mount Waverley</strong><br>
+<strong>[Agent's Address]</strong><br>
+<strong>Mount Waverley, VIC 3149</strong></p>
+
+<p>Dear Mr. Zhao,</p>
+
+<p>I am writing to express my interest in renting the property located at 8 Hewitts Road, Carnegie. I was very impressed with the property during the inspection and believe it would be the perfect home for me and my family.</p>
+
+<p>I am currently employed as a [Your Occupation] at [Company Name], where I have worked for [Number of Years] years. I have a stable income and can provide proof of employment and income upon request. Additionally, I have an excellent rental history and can provide references from previous landlords.</p>
+
+<p>I am particularly interested in this property because of its modern amenities and proximity to local shops, cafes, and public transport. The layout and features of the property suit my needs perfectly, and I would take great care of the home.</p>
+
+<p>Please let me know if there are any additional documents or information you require. I am very keen to proceed with the application and look forward to your positive response.</p>
+
+<p>Thank you for considering my application.</p>
+
+<p>Sincerely,<br>
+[Your Name]</p>
+
+</body>
+</html>
